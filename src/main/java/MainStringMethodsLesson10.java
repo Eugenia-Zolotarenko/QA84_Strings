@@ -23,7 +23,7 @@ public class MainStringMethodsLesson10 {
 
         String s3 = "Hello course QA";
 
-        String ar[] = s3.split(" ");
+        String[] ar = s3.split(" ");
         for (String st: ar) {
             System.out.println(st);
         }
