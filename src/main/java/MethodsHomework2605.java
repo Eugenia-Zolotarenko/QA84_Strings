@@ -7,8 +7,10 @@ public class MethodsHomework2605 {
 
         for (int i = 0; i< ar.length; i++){
 
-            if (ar[i].startsWith(String.valueOf(Character.toUpperCase(ar[i].charAt(0)))))
+            if (ar[i].startsWith(String.valueOf(ar[i].charAt(0)).toUpperCase()))
                 System.out.print(ar[i].charAt(0));
+
+            //String.valueOf(Character.toUpperCase(ar[i].charAt(0))))
 
 //            if (ar[i].startsWith(Character.toString(ar[i].charAt(0)).toUpperCase()))  //Character.toString
 //                System.out.print(ar[i].charAt(0));                                   //Convert char to String
@@ -41,7 +43,6 @@ public class MethodsHomework2605 {
     public static String insertFrom (String s, int index, String ins){
         String sub1 = s.substring(0,index);
         String sub2 = s.substring(index);
-
         return String.join("", sub1, ins, sub2);
     }
 
